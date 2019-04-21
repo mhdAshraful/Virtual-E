@@ -1,5 +1,7 @@
 {
   "name": "Virtual-E",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

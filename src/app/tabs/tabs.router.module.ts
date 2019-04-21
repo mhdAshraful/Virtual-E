@@ -4,47 +4,17 @@ import { TabsPage } from './tabs.page';
 
 const routes: Routes = [
   {
-    path: 'tabs',
+    path: '',  // default
     component: TabsPage,
     children: [
-      {
-        path: 'tab1',
-        children: [
-          {
-            path: '',
-            loadChildren: '../tab1/tab1.module#Tab1PageModule'
-          }
-        ]
-      },
-      {
-        path: 'tab2',
-        children: [
-          {
-            path: '',
-            loadChildren: '../tab2/tab2.module#Tab2PageModule'
-          }
-        ]
-      },
-      {
-        path: 'tab3',
-        children: [
-          {
-            path: '',
-            loadChildren: '../tab3/tab3.module#Tab3PageModule'
-          }
-        ]
-      },
-      {
-        path: '',
-        redirectTo: '/tabs/tab1',
-        pathMatch: 'full'
-      }
+        { path: 'time', loadChildren: '../time/time.module#TimePageModule' },
+        { path: 'learn', loadChildren: '../learn/learn.module#LearnPageModule' },
+        { path: 'online', loadChildren: '../online/online.module#OnlinePageModule' },
+        { path: 'discuss', loadChildren: '../discuss/discuss.module#DiscussPageModule' },
+        { path: 'submit', loadChildren: '../submit/submit.module#SubmitPageModule' },
+        { path: 'grade', loadChildren: '../grade/grade.module#GradePageModule' },
+
     ]
-  },
-  {
-    path: '',
-    redirectTo: '/tabs/tab1',
-    pathMatch: 'full'
   }
 ];
 
