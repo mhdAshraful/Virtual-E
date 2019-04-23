@@ -1,41 +1,134 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      Tab One
-    </ion-title>
+    <ion-back-button></ion-back-button>
+    <ion-title>Time Tables</ion-title>
+    <ion-button slot="end" (click)="today()" color="medium"> Today </ion-button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-    <ion-card class="welcome-card">
-      <ion-img src="/assets/shapes.svg"></ion-img>
-      <ion-card-header>
-        <ion-card-subtitle>Get Started</ion-card-subtitle>
-        <ion-card-title>Welcome to Ionic</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
-      </ion-card-content>
-    </ion-card>
-    <ion-list lines="none">
-      <ion-list-header>
-        <ion-label>Resources</ion-label>
-      </ion-list-header>
-      <ion-item href="https://ionicframework.com/docs/">
-        <ion-icon slot="start" color="medium" name="book"></ion-icon>
-        <ion-label>Ionic Documentation</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/building/scaffolding">
-        <ion-icon slot="start" color="medium" name="build"></ion-icon>
-        <ion-label>Scaffold Out Your App</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/layout/structure">
-        <ion-icon slot="start" color="medium" name="grid"></ion-icon>
-        <ion-label>Change Your App Layout</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/theming/basics">
-        <ion-icon slot="start" color="medium" name="color-fill"></ion-icon>
-        <ion-label>Theme Your App</ion-label>
-      </ion-item>
-    </ion-list>
+  <!--Class Schedule start-->
+      <ion-card color="dark">
+        <ion-card-header>
+              <ion-card-title> Unit 1 Class times </ion-card-title>
+              <p> Students need to join every classes. Only Week 1 will have  three similar session. Students are suggested to join any one   </p>
+        </ion-card-header>
+        <ion-card-content>
+
+        <ion-grid  *ngFor="let item of ( schedules | async )">
+
+            <ion-row>
+                <ion-col>{{ item.day1 }}</ion-col>
+                <ion-col>{{ item.day2 }}</ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col>
+                    <ion-row>Lecture</ion-row>
+                    <ion-row>Time: {{ item.lec1 }}</ion-row>
+                    <ion-row>Location: {{ item.room1 }}</ion-row>
+                </ion-col>
+                <ion-col>
+                    <ion-row>Lecture</ion-row>
+                    <ion-row>Time: {{ item.lec2 }}</ion-row>
+                    <ion-row>Location:{{ item.room2 }} </ion-row>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+
+                <ion-col>
+                    <ion-row>Tutorial</ion-row>
+                    <ion-row>Time: {{ item.tut1 }}</ion-row>
+                    <ion-row>Location: {{ item.room1 }} </ion-row>
+                </ion-col>
+
+                <ion-col>
+                    <ion-row>Tutorial</ion-row>
+                    <ion-row>Time: {{ item.tut2 }}</ion-row>
+                    <ion-row>Location: {{ item.room2 }}</ion-row>
+                </ion-col>
+
+            </ion-row>
+
+        </ion-grid>
+
+        </ion-card-content>
+     </ion-card>
+    <!--Class Schedule end-->
+ <ion-card>
+
+    <ion-card-header tappable (click)="collapsCard = !collapsCard" color="medium">
+      <ion-card-title>New Event</ion-card-title>
+    </ion-card-header>
+    <ion-card-content *ngIf="!collapsCard" >
+        <ion-item>
+          <ion-input type="text" placeholder="Title" [(ngModel)]="event.title" ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="text" placeholder="Description" [(ngModel)]="event.desc"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Start</ion-label>
+          <ion-datetime displayFormat="MM/DD/YY HH:mm" pickerFormat="MMM D:HH:mm" [(ngModel)]="event.startTime" [min]="minDate" ></ion-datetime>
+        </ion-item>
+        <ion-item>
+          <ion-label>End</ion-label>
+          <ion-datetime displayFormat="MM/DD/YY HH:mm" pickerFormat="MMM D:HH:mm" [(ngModel)]="event.endTime" [min]="minDate"></ion-datetime>
+        </ion-item>
+        <ion-item>
+          <ion-label>All Day</ion-label>
+          <ion-checkbox [(ngModel)]="event.allDay"></ion-checkbox>
+        </ion-item>
+
+        <ion-button expand="block" color="dark" (click)="addEvent()" [disabled]="event.title == '' "> Add Event</ion-button>
+    </ion-card-content>
+  </ion-card>
+    <!--end of add event-->
+
+    <ion-item> <ion-title> {{ viewTitle }}</ion-title></ion-item>
+
+    <!--calendar view start-->
+
+  <ion-row>
+    <!-- Change the displayed calendar mode -->
+    <ion-col size="4">
+      <ion-button expand="block" [color]="calendar.mode == 'month' ? 'dark' : 'medium'" (click)="changeMode('month')">Month</ion-button>
+    </ion-col>
+    <ion-col size="4">
+      <ion-button expand="block" [color]="calendar.mode == 'week' ? 'dark' : 'medium'" (click)="changeMode('week')">Week</ion-button>
+    </ion-col>
+    <ion-col size="4">
+      <ion-button expand="block" [color]="calendar.mode == 'day' ? 'dark' : 'medium'" (click)="changeMode('day')">Day</ion-button>
+    </ion-col>
+
+    <!-- Move back one screen of the slides -->
+    <ion-col size="6" text-left>
+      <ion-button fill="clear" (click)="back()">
+        <ion-icon name="arrow-back" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-col>
+
+    <!-- Move forward one screen of the slides -->
+    <ion-col size="6" text-right>
+      <ion-button fill="clear" (click)="next()">
+        <ion-icon name="arrow-forward" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-col>
+  </ion-row>
+
+  <calendar
+  [eventSource]="eventSource"
+  [calendarMode]="calendar.mode"
+  [currentDate]="calendar.currentDate"
+  (onEventSelected)="onEventSelected($event)"
+  (onTitleChanged)="onViewTitleChanged($event)"
+  (onTimeSelected)="onTimeSelected($event)"
+  startHour="6"
+  endHour="20"
+  step="30"
+  startingDayWeek="1">
+  </calendar>
+
+
 </ion-content>

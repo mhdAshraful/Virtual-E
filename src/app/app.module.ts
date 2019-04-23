@@ -9,18 +9,12 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
+import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule} from '@angular/fire/auth';
+import { AngularFirestoreModule} from '@angular/fire/firestore';
 
 
-// import { TimePage } from './time/time.page';
-// import { LearnPage } from './learn/learn.page';
-// import { OnlinePage } from './online/online.page';
-// import { DiscussPage } from './discuss/discuss.page';
-// import { SubmitPage } from './submit/submit.page';
-// import { GradePage } from './grade/grade.page';
-// , TimePage, LearnPage, OnlinePage, DiscussPage, SubmitPage, GradePage
 
 
 
@@ -33,6 +27,8 @@ import { AngularFireAuthModule} from '@angular/fire/auth';
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
+    AngularFirestoreModule,
+
   ],
   providers: [
     StatusBar,

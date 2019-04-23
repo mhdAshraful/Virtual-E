@@ -4,11 +4,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { TimePage} from './time.page';
+import {NgCalendarModule} from 'ionic2-calendar';
+
 
 
 
 @NgModule({
   imports: [
+    NgCalendarModule,
     IonicModule,
     CommonModule,
     FormsModule,
