@@ -5,7 +5,12 @@
 export const environment = {
   production: false,  // virtual-e
   firebase: {
-
+    apiKey: "AIzaSyBmE8pkQ8PYQqIdCtBuif8esx7F4Mc9vkE",
+    authDomain: "virtual-e.firebaseapp.com",
+    databaseURL: "https://virtual-e.firebaseio.com",
+    projectId: "virtual-e",
+    storageBucket: "virtual-e.appspot.com",
+    messagingSenderId: "880665872627"
   }
 };
 
