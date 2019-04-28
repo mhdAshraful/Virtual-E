@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>arobjects</ion-title>
+  <ion-buttons slot="end">
+      <ion-button (click)="close()"><ion-icon name="close" slot="icon-only"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-button (click)="renderComputer()" expand="block" color="medium" >Super Computer</ion-button>
+    <ion-button (click)="renderMachine()" expand="block" color="dark">Factory</ion-button>
+    <ion-button (click)="renderCoyote()" expand="block" color="medium">Coyote</ion-button>
+    <ion-button (click)="renderEarth()" expand="block" color="dark">Earth</ion-button>
+    <ion-button (click)="renderForest()" expand="block" color="medium">Forest</ion-button>
+    <ion-button (click)="renderForest3d()" expand="block" color="dark">Another forest</ion-button>
+    <ion-button (click)="renderSatellite()" expand="block" color="medium">Satellite</ion-button>
+    <ion-button (click)="renderHouse()" expand="block" color="dark">House</ion-button>
+    <ion-button (click)="renderKangaroo()" expand="block" color="medium">Kangaroo</ion-button>
+  </ion-list>
+</ion-content>
