@@ -1,20 +1,23 @@
-<ion-content>
-  <ion-card>
-      <ion-img src="/assets/1.svg">  </ion-img>
-    <ion-card-content>
-       <ion-card-title> Start Learning Differently </ion-card-title>
-      <p> Please Use your CDU Provided email and password. </p>
-      <ion-list>
-        <ion-item>
-          <ion-label position="stacked"> Student Email: </ion-label>
-          <ion-input placeholder="s123456789@students.cdu.edu.au" type="text" [(ngModel)]="email">  </ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-label position="stacked">Password:</ion-label>
-          <ion-input placeholder="Type here please ..." type="password" [(ngModel)]="password"></ion-input>
-        </ion-item>
-      </ion-list>
-        <ion-button expand="block" color="dark" (click)="login(email, password)">Login </ion-button>
-    </ion-card-content>
-  </ion-card>
+<ion-content >
+  <div class="cardcontainer">
+  <ion-title> Application: Virtual-É </ion-title>
+    <ion-card>
+        <ion-img src="/assets/1.svg">  </ion-img>
+      <ion-card-content>
+         <ion-card-title> Start Learning Differently </ion-card-title>
+        <p> Please Use your CDU Provided email and password. </p>
+        <ion-list>
+          <ion-item>
+            <ion-label position="stacked"> Student Email: </ion-label>
+            <ion-input placeholder="s123456789@students.cdu.edu.au" type="text" [(ngModel)]="email">  </ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked">Password:</ion-label>
+            <ion-input placeholder="Type here please ..." type="password" [(ngModel)]="password"></ion-input>
+          </ion-item>
+        </ion-list>
+          <ion-button expand="block" color="dark" (click)="login(email, password)">Login </ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
 </ion-content>

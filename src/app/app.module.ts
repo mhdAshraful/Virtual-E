@@ -29,6 +29,7 @@ import { AngularFirestoreModule} from '@angular/fire/firestore';
     AngularFireAuthModule,
     AngularFirestoreModule,
 
+
   ],
   providers: [
     StatusBar,
