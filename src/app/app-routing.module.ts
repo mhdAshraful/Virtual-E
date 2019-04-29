@@ -14,7 +14,9 @@ const routes: Routes = [
   { path: 'satellite', loadChildren: './arobjects/satellite/satellite.module#SatellitePageModule' },
   { path: 'forest3d', loadChildren: './arobjects/forest3d/forest3d.module#Forest3dPageModule' },
   { path: 'computer', loadChildren: './arobjects/computer/computer.module#ComputerPageModule' },
-  { path: 'machine', loadChildren: './arobjects/machine/machine.module#MachinePageModule' }
+  { path: 'machine', loadChildren: './arobjects/machine/machine.module#MachinePageModule' },
+  { path: 'units', loadChildren: './units/units.module#UnitsPageModule' },
+  { path: 'settings', loadChildren: './settings/settings.module#SettingsPageModule' }
 ];
 @NgModule({
   imports: [

@@ -1,3 +1,4 @@
+/* tslint:disable:quotemark */
 import {Component, Inject, LOCALE_ID, OnInit, ViewChild} from '@angular/core';
 import {Schedule, ScheduleService} from '../services/schedule.service';
 import { NgCalendarModule  } from 'ionic2-calendar';
@@ -5,6 +6,8 @@ import {Observable} from 'rxjs';
 import {formatDate} from '@angular/common';
 import {CalendarComponent} from 'ionic2-calendar/calendar';
 import {AlertController} from '@ionic/angular';
+import {Router} from '@angular/router';
+
 
 @Component({
   selector: 'app-time',
@@ -31,6 +34,7 @@ export class TimePage implements OnInit {
 
   constructor( private scheduleService: ScheduleService,
                private alertCtrl: AlertController,
+               private router: Router,
                @Inject(LOCALE_ID) private locale: string) {}
 
 
@@ -47,7 +51,7 @@ export class TimePage implements OnInit {
       endTime: new Date(this.event.endTime),
       allDay: this.event.allDay,
     };
-    if (eventCopy) {
+      if (eventCopy) {
         let start = eventCopy.startTime;
             let end = eventCopy.endTime;
 
@@ -123,6 +127,9 @@ onTimeSelected(ev) {
   this.event.endTime = (selected.toISOString());
 }
 
+navigateToUnits() {
+     this.router.navigate(['units']);
+}
 
 
 

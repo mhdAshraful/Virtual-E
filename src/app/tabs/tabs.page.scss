@@ -1,1 +1,33 @@
+@media only screen and (min-width:360px) {
+  #tabs{
+    width: 100%;
+  }
+}
+@media only screen and (min-width:390px) {
+  #tabs{
+    width: 100%;
+  }
+}
+@media only screen and (min-width:420px) {
+  #tabs{
+    max-width: 420px;
+  }
+}
+@media only screen and (min-width:540px) {
+  #tabs{
+    max-width: 540px;
+  }
+}
+@media only screen and (min-width:600px) {
+  #tabs{
+    max-width: 600px;
+  }
+}
+@media only screen and (min-width:800px) {
+  #tabs{
+    max-width: 100%;
+  }
+}
+
+
 

@@ -25,7 +25,7 @@ export class LoginPage implements OnInit {
     try {
        const res = await this.afAuth.auth.signInAndRetrieveDataWithEmailAndPassword(email, password);
 
-       this.router.navigate(['/tabs']);
+       this.router.navigate(['/units']);
 
     } catch (err) {
       console.dir(err);
