@@ -9,8 +9,8 @@
 
 <ion-content>
   <ion-list-header>Units you are Enrolled In</ion-list-header>
-  <ion-list *ngFor="let unit of ( enrolledUnits | async) ">
-    <ion-item (click)="navigateToTabs()" color="medium" >  {{ unit.name }} </ion-item>
+  <ion-list *ngFor="let unit of ( enrolledUnits | async) " class="lists" >
+    <ion-item (click)="navigateToTabs()" color="medium" class="item" > {{ unit.name }} </ion-item>
   </ion-list>
 
 </ion-content>

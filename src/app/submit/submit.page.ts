@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
+
 
 @Component({
   selector: 'app-submit',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SubmitPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+  navigateToUnits() {
+    this.router.navigate(['units']);
   }
 
 }
