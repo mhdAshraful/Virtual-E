@@ -17,5 +17,9 @@ export class OnlinePage implements OnInit {
    navigateToArObjects() {
      this.router.navigate(['arobjects']);
    }
+   navigateToUnits() {
+     this.router.navigate(['units']);
+    }
+
 
 }
