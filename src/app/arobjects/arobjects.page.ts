@@ -44,5 +44,8 @@ export class ArobjectsPage implements OnInit {
   renderKangaroo() {
      this.router.navigate(['kangaroo']);
   }
+   navigateToUnits() {
+     this.router.navigate(['units']);
+    }
 
 }
