@@ -6,6 +6,7 @@ export const environment = {
   production: false,  // virtual-e
   firebase: {
 
+
   },
 };
 

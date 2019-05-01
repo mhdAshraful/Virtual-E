@@ -9,28 +9,54 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-list-header> Announcements </ion-list-header>
-  <ion-list>
-    <ion-title> New random announcement </ion-title>
-    <ion-text padding-start="10px;">well Done! Good job. Go ahead, well Done! Good job. Go ahead, well Done! Good job. Go ahead, well Done! Good job. Go ahead </ion-text>
+<ion-content padding="8px;">
+<ion-item>
+  <h2> Announcements </h2>
+  <ion-button tappable (click)="collapsAnnouncement = !collapsAnnouncement" color="dark" slot="end">
+    <ion-icon slot="icon-only" name="arrow-dropdown" ></ion-icon>
+  </ion-button>
+</ion-item>
 
-  </ion-list>
+    <ion-text *ngIf="collapsAnnouncement">
+       <h3>Announcement 2</h3>
+      <p> Announcement will be shown here</p>
+        <h3> Announcement 1</h3>
+      <p> Announcement will be shown here.  It can be multiple here</p>
+     </ion-text>
 
-  <ion-list-header> Weekly Tasks </ion-list-header>
+
+
+  <ion-list-header> <h2> Weekly Tasks </h2>  </ion-list-header>
   <ion-list>
-    <ion-item>Week 1  <ion-button slot="end" fill="clear"> <ion-icon color="dark" slot="icon-only" name="add" ></ion-icon> </ion-button></ion-item>
-    <ion-item>Week 2  <ion-button slot="end" fill="clear"> <ion-icon color="dark" slot="icon-only" name="add" ></ion-icon> </ion-button></ion-item>
-    <ion-item>Week 3  <ion-button slot="end" fill="clear"> <ion-icon color="dark" slot="icon-only" name="add" ></ion-icon> </ion-button></ion-item>
-    <ion-item>Week 4  <ion-button slot="end" fill="clear"> <ion-icon color="dark" slot="icon-only" name="add" ></ion-icon> </ion-button></ion-item>
-    <ion-item>Week 5  <ion-button slot="end" fill="clear"> <ion-icon color="dark" slot="icon-only" name="add" ></ion-icon> </ion-button></ion-item>
-    <ion-item>Week 6  <ion-button slot="end" fill="clear"> <ion-icon color="dark" slot="icon-only" name="add" ></ion-icon> </ion-button></ion-item>
-    <ion-item>Week 7  <ion-button slot="end" fill="clear"> <ion-icon color="dark" slot="icon-only" name="add" ></ion-icon> </ion-button></ion-item>
-    <ion-item>Week 8  <ion-button slot="end" fill="clear"> <ion-icon color="dark" slot="icon-only" name="add" ></ion-icon> </ion-button></ion-item>
-    <ion-item>Week 9  <ion-button slot="end" fill="clear"> <ion-icon color="dark" slot="icon-only" name="add" ></ion-icon> </ion-button></ion-item>
-    <ion-item>Week 10  <ion-button slot="end" fill="clear"> <ion-icon color="dark" slot="icon-only" name="add" ></ion-icon> </ion-button></ion-item>
-    <ion-item>Week 11  <ion-button slot="end" fill="clear"> <ion-icon color="dark" slot="icon-only" name="add" ></ion-icon> </ion-button></ion-item>
-    <ion-item>Week 12  <ion-button slot="end" fill="clear"> <ion-icon color="dark" slot="icon-only" name="add" ></ion-icon> </ion-button></ion-item>
+    <ion-item> <h2>Week 1</h2>
+      <ion-button slot="end" tappable (click)="collapsWeek1 = !collapsWeek1" color="dark" >
+        <ion-icon slot="icon-only" name="arrow-dropdown" ></ion-icon>
+      </ion-button>
+    </ion-item>
+      <ion-text *ngIf="collapsWeek1">
+        <h3> Heading:  </h3>
+        <p> Short Paragraph will be shown here </p>
+      </ion-text>
+
+
+
+    <ion-item> <h2>Week 2</h2>
+
+      <ion-button slot="end" tappable (click)="collapsWeek2 = !collapsWeek2" color="dark" >
+       <ion-icon  slot="icon-only" name="arrow-dropdown" ></ion-icon>
+      </ion-button>
+
+    </ion-item>
+    <ion-text *ngIf="collapsWeek2">
+
+      <h3> Heading: First Paragraph  </h3>
+      <p> Short Paragraph will be shown here </p>
+        <br>
+      <h3> Heading: Even Multiple Paragraph </h3>
+      <p> Short Paragraph will be shown here </p>
+
+    </ion-text>
+
   </ion-list>
 
 
