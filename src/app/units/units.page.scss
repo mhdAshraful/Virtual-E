@@ -2,6 +2,7 @@ ion-content{
    --ion-background-color: #ecf0f1;
 }
 .list {
+  width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -9,6 +10,7 @@ ion-content{
 }
 
 .item {
+  width: 50%;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   text-transform: uppercase;
@@ -21,6 +23,7 @@ ion-content{
   }
 
 .item:hover {
+
   background-color: #bdc3c7;
   box-shadow: 0px 10px 15px rgba(127, 140, 141,1.0);
   color: rgba(236, 240, 241,1.0);
