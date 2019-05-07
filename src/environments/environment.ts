@@ -3,10 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,  // virtual-e
+  production: false,  // SmartUni-VE
   firebase: {
-
-
+     apiKey: 'AIzaSyCfO6s6jgptgioufTjVmZDyfLpKc32b-y8',
+  authDomain: 'smartuni-ve.firebaseapp.com',
+  databaseURL: 'https://smartuni-ve.firebaseio.com',
+  projectId: 'smartuni-ve',
+  storageBucket: 'smartuni-ve.appspot.com',
+  messagingSenderId: '719299316941',
+  appId: '1:719299316941:web:1495945fd9a99977'
   },
 };
 

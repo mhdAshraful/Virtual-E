@@ -1,0 +1,363 @@
+{
+	"accessors" : 
+	[
+		{
+			"bufferView" : 0,
+			"byteOffset" : 0,
+			"componentType" : 5125,
+			"count" : 98076,
+			"type" : "SCALAR"
+		},
+		{
+			"bufferView" : 1,
+			"byteOffset" : 0,
+			"componentType" : 5126,
+			"count" : 98076,
+			"type" : "VEC3"
+		},
+		{
+			"bufferView" : 2,
+			"byteOffset" : 0,
+			"componentType" : 5126,
+			"count" : 98076,
+			"type" : "VEC3"
+		},
+		{
+			"bufferView" : 3,
+			"byteOffset" : 0,
+			"componentType" : 5126,
+			"count" : 98076,
+			"type" : "VEC4"
+		},
+		{
+			"bufferView" : 4,
+			"byteOffset" : 0,
+			"componentType" : 5126,
+			"count" : 98076,
+			"type" : "VEC3"
+		},
+		{
+			"bufferView" : 5,
+			"byteOffset" : 0,
+			"componentType" : 5126,
+			"count" : 98076,
+			"type" : "VEC2"
+		},
+		{
+			"bufferView" : 6,
+			"byteOffset" : 0,
+			"componentType" : 5126,
+			"count" : 25,
+			"type" : "SCALAR"
+		},
+		{
+			"bufferView" : 7,
+			"byteOffset" : 0,
+			"componentType" : 5126,
+			"count" : 25,
+			"type" : "VEC4"
+		},
+		{
+			"bufferView" : 8,
+			"byteOffset" : 0,
+			"componentType" : 5126,
+			"count" : 25,
+			"type" : "VEC3"
+		}
+	],
+	"animations" : 
+	[
+		{
+			"channels" : 
+			[
+				{
+					"sampler" : 0,
+					"target" : 
+					{
+						"node" : 1,
+						"path" : "rotation"
+					}
+				},
+				{
+					"sampler" : 1,
+					"target" : 
+					{
+						"node" : 1,
+						"path" : "translation"
+					}
+				}
+			],
+			"name" : "Take 001",
+			"samplers" : 
+			[
+				{
+					"input" : 6,
+					"interpolation" : "LINEAR",
+					"output" : 7
+				},
+				{
+					"input" : 6,
+					"interpolation" : "LINEAR",
+					"output" : 8
+				}
+			]
+		}
+	],
+	"asset" : 
+	{
+		"version" : "2.0"
+	},
+	"bufferViews" : 
+	[
+		{
+			"buffer" : 0,
+			"byteLength" : 392304,
+			"byteOffset" : 0
+		},
+		{
+			"buffer" : 0,
+			"byteLength" : 1176912,
+			"byteOffset" : 392304
+		},
+		{
+			"buffer" : 0,
+			"byteLength" : 1176912,
+			"byteOffset" : 1569216
+		},
+		{
+			"buffer" : 0,
+			"byteLength" : 1569216,
+			"byteOffset" : 2746128
+		},
+		{
+			"buffer" : 0,
+			"byteLength" : 1176912,
+			"byteOffset" : 4315344
+		},
+		{
+			"buffer" : 0,
+			"byteLength" : 784608,
+			"byteOffset" : 5492256
+		},
+		{
+			"buffer" : 0,
+			"byteLength" : 100,
+			"byteOffset" : 6276864,
+			"byteStride" : 4
+		},
+		{
+			"buffer" : 0,
+			"byteLength" : 400,
+			"byteOffset" : 6276964,
+			"byteStride" : 16
+		},
+		{
+			"buffer" : 0,
+			"byteLength" : 300,
+			"byteOffset" : 6277364,
+			"byteStride" : 12
+		}
+	],
+	"buffers" : 
+	[
+		{
+			"byteLength" : 6277664,
+			"uri" : "model.bin"
+		}
+	],
+	"images" : 
+	[
+		{
+			"uri" : "53_SkeletonSystem_D.png"
+		},
+		{
+			"uri" : "53_SkeletonSystem_N.png"
+		}
+	],
+	"materials" : 
+	[
+		{
+			"name" : "SkeletonSystem_mat",
+			"normalTexture" : 
+			{
+				"index" : 1,
+				"texCoord" : 0
+			},
+			"pbrMetallicRoughness" : 
+			{
+				"baseColorTexture" : 
+				{
+					"index" : 0,
+					"texCoord" : 0
+				}
+			}
+		}
+	],
+	"meshes" : 
+	[
+		{
+			"primitives" : 
+			[
+				{
+					"attributes" : 
+					{
+						"COLOR_0" : 4,
+						"NORMAL" : 2,
+						"POSITION" : 1,
+						"TANGENT" : 3,
+						"TEXCOORD_0" : 5
+					},
+					"indices" : 0,
+					"material" : 0,
+					"mode" : 4
+				}
+			]
+		}
+	],
+	"nodes" : 
+	[
+		{
+			"children" : 
+			[
+				1
+			],
+			"matrix" : 
+			[
+				1,
+				0,
+				0,
+				0,
+				0,
+				1,
+				0,
+				0,
+				0,
+				0,
+				1,
+				0,
+				0,
+				0,
+				0,
+				1
+			],
+			"name" : "RootNode",
+			"rotation" : 
+			[
+				0,
+				0,
+				0,
+				1
+			],
+			"scale" : 
+			[
+				1,
+				1,
+				1
+			],
+			"translation" : 
+			[
+				0,
+				0,
+				0
+			]
+		},
+		{
+			"children" : 
+			[
+				2
+			],
+			"name" : "SkeletonSystem_mesh",
+			"rotation" : 
+			[
+				0.9999999999999971,
+				0,
+				0,
+				7.549789954891874e-08
+			],
+			"scale" : 
+			[
+				1,
+				1,
+				1
+			],
+			"translation" : 
+			[
+				1.862645149230957e-09,
+				0.7754524993896483,
+				-5.353987216949463e-05
+			]
+		},
+		{
+			"matrix" : 
+			[
+				1,
+				0,
+				0,
+				0,
+				0,
+				1,
+				0,
+				0,
+				0,
+				0,
+				1,
+				0,
+				0,
+				0,
+				0,
+				1
+			],
+			"mesh" : 0,
+			"rotation" : 
+			[
+				0,
+				0,
+				0,
+				1
+			],
+			"scale" : 
+			[
+				1,
+				1,
+				1
+			],
+			"translation" : 
+			[
+				0,
+				0,
+				0
+			]
+		}
+	],
+	"samplers" : 
+	[
+		{
+			"wrapS" : 10497,
+			"wrapT" : 10497
+		},
+		{
+			"wrapS" : 10497,
+			"wrapT" : 10497
+		}
+	],
+	"scenes" : 
+	[
+		{
+			"nodes" : 
+			[
+				0
+			]
+		}
+	],
+	"textures" : 
+	[
+		{
+			"sampler" : 0,
+			"source" : 0
+		},
+		{
+			"sampler" : 1,
+			"source" : 1
+		}
+	]
+}
