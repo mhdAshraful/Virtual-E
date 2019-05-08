@@ -1,0 +1,12 @@
+.ado-visible-landscape,
+.ado-visible-portrait { display: none }
+@media screen and (orientation:landscape) {
+    .ado-visible-landscape {
+        display: inline-block
+    }
+}
+@media screen and (orientation:portrait) {
+    .ado-visible-portrait {
+        display: inline-block
+    }
+}
