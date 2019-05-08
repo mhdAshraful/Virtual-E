@@ -6,6 +6,9 @@
     <ion-title>
      Online Classes
     </ion-title>
+       <ion-button (click)="navigateToHelp()" slot="end" fill="clear">
+         <ion-icon slot="icon-only" name="help-circle" color="dark" ></ion-icon>
+      </ion-button>
   </ion-toolbar>
 </ion-header>
 
@@ -15,7 +18,7 @@
         <ion-card-content>
            <ion-card-title>Live Virtual Class  </ion-card-title>
             <ion-card-subtitle> Live Class is only available during Regular class times. Please refer to class Schedules.  To see class schedules: <ion-button (click)="gotoTimePage()" fill="clear"> Click Here </ion-button>   </ion-card-subtitle>
-               <ion-button color="medium">join Virtual Class</ion-button>
+            <ion-button color="success" (click)="navigateToVrView()">join Virtual Class</ion-button>
         </ion-card-content>
     </ion-card>
     <ion-card color="dark">

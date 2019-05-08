@@ -34,7 +34,7 @@
                 <ion-col>
                     <ion-row>Lecture</ion-row>
                     <ion-row>Time: {{ item.lec2 }}</ion-row>
-                    <ion-row>Location:{{ item.room2 }} </ion-row>
+                    <ion-row>Location: {{ item.room2 }} </ion-row>
                 </ion-col>
             </ion-row>
 
@@ -63,6 +63,7 @@
 
     <ion-card-header tappable (click)="collapsCard = !collapsCard" color="dark">
       <ion-card-title>Add New Event</ion-card-title>
+
     </ion-card-header>
     <ion-card-content *ngIf="collapsCard" >
         <ion-item>

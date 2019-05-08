@@ -1,0 +1,60 @@
+ion-content{
+   --ion-background-color: #ecf0f1;
+}
+
+@media only screen and (min-width:360px) {
+  ion-card{
+  max-width: 344px;
+  }
+  .cardcontainer {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+@media only screen and (min-width:390px) {
+  ion-card{
+  max-width: 344px;
+  }
+  .cardcontainer {
+    margin-left: 23px;
+    margin-right: 23px;
+  }
+}
+@media only screen and (min-width:420px) {
+  ion-card{
+  max-width: 344px;
+  }
+  .cardcontainer {
+    margin-left: 16%;
+    margin-right: 38px;
+  }
+}
+@media only screen and (min-width:540px) {
+  ion-card{
+  max-width: 344px;
+  }
+  .cardcontainer {
+    margin-left: 20%;
+    margin-right: 97px;
+  }
+}
+@media only screen and (min-width:600px) {
+  ion-card{
+  max-width: 344px;
+  }
+  .cardcontainer {
+    margin-left: 22%;
+    margin-right: 128px;
+  }
+}
+@media only screen and (min-width:800px) {
+  ion-card{
+  max-width: 344px;
+  }
+  .cardcontainer {
+    margin-left: 33%;
+    margin-right: 128px;
+  }
+}
+
+

@@ -23,6 +23,12 @@ export class OnlinePage implements OnInit {
    gotoTimePage() {
        this.router.navigate(['tabs/time']);
     }
+    navigateToHelp() {
+     this.router.navigate(['help']);
+    }
+    navigateToVrView() {
+       this.router.navigate(['vrview']);
+    }
 
 
 }
