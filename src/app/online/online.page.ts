@@ -20,9 +20,11 @@ export class OnlinePage implements OnInit {
    navigateToUnits() {
      this.router.navigate(['units']);
     }
- navigateToHelp() {
+    navigateToHelp() {
      this.router.navigate(['help']);
     }
-
+    navigateToVrView() {
+       this.router.navigate(['vrview']);
+    }
 
 }

@@ -17,14 +17,14 @@
         <ion-card-content>
            <ion-card-title>Live Virtual Class  </ion-card-title>
             <ion-card-subtitle> Join Unit 1 Virtual Class during Regular class times. </ion-card-subtitle>
-               <ion-button color="medium">join Virtual Class</ion-button>
+               <ion-button color="success" (click)="navigateToVrView()">join Virtual Class</ion-button>
         </ion-card-content>
     </ion-card>
     <ion-card color="dark">
         <ion-card-content>
            <ion-card-title>3D Models on AR  </ion-card-title>
             <ion-card-subtitle> Please Accept camera access to see some of the 3D models. </ion-card-subtitle>
-               <ion-button (click)="navigateToArObjects()" >Augmented Reality </ion-button>
+               <ion-button (click)="navigateToArObjects()" color="success" >Augmented Reality </ion-button>
         </ion-card-content>
     </ion-card>
     <ion-card color="dark">
