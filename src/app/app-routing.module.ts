@@ -16,7 +16,8 @@ const routes: Routes = [
   { path: 'computer', loadChildren: './arobjects/computer/computer.module#ComputerPageModule' },
   { path: 'machine', loadChildren: './arobjects/machine/machine.module#MachinePageModule' },
   { path: 'units', loadChildren: './units/units.module#UnitsPageModule' },
-  { path: 'settings', loadChildren: './settings/settings.module#SettingsPageModule' }
+  { path: 'settings', loadChildren: './settings/settings.module#SettingsPageModule' },
+  { path: 'help', loadChildren: './help/help.module#HelpPageModule' }
 ];
 @NgModule({
   imports: [

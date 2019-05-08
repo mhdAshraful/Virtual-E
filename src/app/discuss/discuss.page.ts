@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 
+
 @Component({
   selector: 'app-discuss',
   templateUrl: './discuss.page.html',
@@ -15,5 +16,6 @@ export class DiscussPage implements OnInit {
    navigateToUnits() {
      this.router.navigate(['units']);
     }
+
 
 }
