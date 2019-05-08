@@ -17,9 +17,11 @@ const routes: Routes = [
   { path: 'machine', loadChildren: './arobjects/machine/machine.module#MachinePageModule' },
   { path: 'units', loadChildren: './units/units.module#UnitsPageModule' },
   { path: 'settings', loadChildren: './settings/settings.module#SettingsPageModule' },
-  { path: 'vrview', loadChildren: './vrview/vrview.module#VrviewPageModule' },
+<<<<<<< HEAD
+  { path: 'vrview', loadChildren: './vrview/vrview.module#VrviewPageModule' }
+=======
   { path: 'help', loadChildren: './help/help.module#HelpPageModule' }
-
+>>>>>>> feature/pagedetails
 ];
 @NgModule({
   imports: [

@@ -3,10 +3,40 @@
      <ion-button (click)="navigateToUnits()" slot="start"  fill="clear">
          <ion-icon slot="icon-only" name="home" color="dark" ></ion-icon>
       </ion-button>
-    <ion-title>Submit Assignments</ion-title>
+    <ion-title>Assessments</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+    <ion-label> Assessment overview  </ion-label>
+
+    <ion-grid>
+        <ion-row>
+            <ion-col size-sm>Name</ion-col>
+            <ion-col size-sm>Description</ion-col>
+            <ion-col size-sm>Marks</ion-col>
+        </ion-row>
+
+            <ion-row *ngFor="let mark of ( marks | async) ">
+                <ion-col size-sm>
+                    <ion-row> {{ mark.name }} </ion-row>
+                </ion-col>
+
+                <ion-col size-sm>
+                    <ion-row> {{ mark.desc }} </ion-row>
+                </ion-col>
+
+                <ion-col size-sm>
+                    <ion-row> {{ mark.marks }} </ion-row>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col>Total</ion-col>
+                <ion-col>marks Obtained</ion-col>
+                <ion-col> 85/100 </ion-col>
+            </ion-row>
+
+        </ion-grid>
 
 </ion-content>

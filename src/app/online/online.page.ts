@@ -20,6 +20,9 @@ export class OnlinePage implements OnInit {
    navigateToUnits() {
      this.router.navigate(['units']);
     }
+ navigateToHelp() {
+     this.router.navigate(['help']);
+    }
 
 
 }
