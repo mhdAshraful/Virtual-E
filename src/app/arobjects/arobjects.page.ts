@@ -9,7 +9,11 @@ import {Router} from '@angular/router';
 })
 export class ArobjectsPage implements OnInit {
 
-  constructor(private navCtrl: NavController, private router: Router) { }
+  constructor(private navCtrl: NavController,
+              private router: Router) {
+
+  }
+
 
   ngOnInit() {
   }

@@ -57,4 +57,28 @@ ion-content{
   }
 }
 
+.wrapper {
+  position: relative;
+}
+.chrome {
+  position: relative;
+}
 
+.wrapper p {
+  background-color: #383a3e;
+  bottom: 35%;
+  color: white;
+  font-size: 16px;
+  right: 0;
+  padding: 0.25em 0.75em;
+  position: absolute;
+}
+.chrome p {
+  background-color: #383a3e;
+  bottom: 20%;
+  color: white;
+  font-size: 16px;
+  right: 0;
+  padding: 0.25em 0.75em;
+  position: absolute;
+}

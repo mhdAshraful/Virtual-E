@@ -11,8 +11,21 @@
 </ion-header>
 
 <ion-content>
+  <div class="cardcontainer">
+    <ion-card >
+       <ion-img src="../../assets/marker.png" ></ion-img>
+      <ion-card-title padding >Marker Image</ion-card-title>
+      <ion-card-content>
+        <ion-text>
+          Please Download this marker image and print a copy. Later point you camera to the marker to see 3D models in Augmented Reality View
+        </ion-text>
+      </ion-card-content>
+      <!--<ion-button slot="end" fill="clear">Download</ion-button>-->
+    </ion-card>
+ </div>
 
   <ion-list>
+    <ion-list-header> Click Any of these 3D models </ion-list-header>
     <ion-button (click)="renderComputer()" expand="block" color="medium" >Super Computer</ion-button>
     <ion-button (click)="renderMachine()" expand="block" color="dark">Factory</ion-button>
     <ion-button (click)="renderCoyote()" expand="block" color="medium">Coyote</ion-button>
