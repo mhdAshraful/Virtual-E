@@ -14,26 +14,25 @@
   <div class="cardcontainer">
     <ion-card >
        <ion-img src="../../assets/marker.png" ></ion-img>
-      <ion-card-title padding >Marker Image</ion-card-title>
+      <ion-card-title padding> Point you camera to the logo</ion-card-title>
       <ion-card-content>
         <ion-text>
           Please Download this marker image and print a copy. Later point you camera to the marker to see 3D models in Augmented Reality View
         </ion-text>
       </ion-card-content>
-      <!--<ion-button slot="end" fill="clear">Download</ion-button>-->
+      <ion-button slot="end" fill="clear"> <a href="./../assets/marker1.png" target="_blank"> Download Logo</a> </ion-button>
     </ion-card>
  </div>
 
   <ion-list>
     <ion-list-header> Click Any of these 3D models </ion-list-header>
-    <ion-button (click)="renderComputer()" expand="block" color="medium" >Super Computer</ion-button>
-    <ion-button (click)="renderMachine()" expand="block" color="dark">Factory</ion-button>
+
+
     <ion-button (click)="renderCoyote()" expand="block" color="medium">Coyote</ion-button>
     <ion-button (click)="renderEarth()" expand="block" color="dark">Earth</ion-button>
     <ion-button (click)="renderForest()" expand="block" color="medium">Forest</ion-button>
     <ion-button (click)="renderForest3d()" expand="block" color="dark">Another forest</ion-button>
     <ion-button (click)="renderSatellite()" expand="block" color="medium">Satellite</ion-button>
-    <ion-button (click)="renderHouse()" expand="block" color="dark">HIT381</ion-button>
     <ion-button (click)="renderKangaroo()" expand="block" color="medium">Kangaroo</ion-button>
     <ion-button (click)="renderHuman()" expand="block" color="dark">Skeleton</ion-button>
   </ion-list>

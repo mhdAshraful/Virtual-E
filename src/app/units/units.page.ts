@@ -14,7 +14,7 @@ export class UnitsPage implements OnInit {
    private enrolledUnits: Observable<EnrolledUnits[]>;
 
   constructor(private router: Router,
-              private enrolledunitsservice: EnrolledUnitsService,) { }
+              private enrolledunitsservice: EnrolledUnitsService ) { }
 
   ngOnInit() {
     this.enrolledUnits = this.enrolledunitsservice.getItems();

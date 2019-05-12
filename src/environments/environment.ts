@@ -6,12 +6,12 @@ export const environment = {
   production: false,  // SmartUni-VE
   firebase: {
     apiKey: "AIzaSyAtwq4klJIpsBKVDmUnGmsYDm7sTPZU4So",
-    authDomain: "smartuni-virtual-e.firebaseapp.com",
-    databaseURL: "https://smartuni-virtual-e.firebaseio.com",
-    projectId: "smartuni-virtual-e",
-    storageBucket: "smartuni-virtual-e.appspot.com",
-    messagingSenderId: "1017993026221",
-    appId: "1:1017993026221:web:d9ccd0e86145b179"
+  authDomain: "smartuni-virtual-e.firebaseapp.com",
+  databaseURL: "https://smartuni-virtual-e.firebaseio.com",
+  projectId: "smartuni-virtual-e",
+  storageBucket: "smartuni-virtual-e.appspot.com",
+  messagingSenderId: "1017993026221",
+  appId: "1:1017993026221:web:d9ccd0e86145b179"
   },
 
 };

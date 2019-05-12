@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 import {Observable} from 'rxjs';
 import {Marks, MarksService} from '../services/marks.service';
+import {async} from 'q';
 
 
 @Component({
@@ -16,7 +17,7 @@ export class SubmitPage implements OnInit {
               private markService: MarksService) { }
 
   ngOnInit() {
-    this.marks = this.markService.getItems();
+     this.marks = this.markService.getItems();
   }
   navigateToUnits() {
     this.router.navigate(['units']);
