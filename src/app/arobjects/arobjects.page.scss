@@ -7,6 +7,24 @@ iframe {
     height: 100%;
     border: none;
 }
+.buttonimage{
+  width: 40%;
+  height: auto;
+}
+
+ion-segment-button{
+  padding-top: 5px;
+  font-weight: bold;
+  color: #222428;
+  height: 45px;
+  background-color: #ffce00;
+}
+ion-list{
+  padding-top: 20px;
+}
+ion-list-header{
+  background-color: coral;
+}
 
 @media only screen and (min-width:360px) {
   ion-card{

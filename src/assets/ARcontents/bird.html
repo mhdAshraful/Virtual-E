@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Bird </title>
+<!-- include A-Frame obviously -->
+<script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+<!-- include ar.js for A-Frame -->
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+</head>
+<body style='margin : 0px; overflow: hidden;'>
+
+  <a-scene embedded arjs='sourceType: webcam;'>
+    <!-- content goes here. -->
+    <!--<a-box position='0 0.5 0'  material='opacity: 0.5;'></a-box>-->
+
+    <!-- define a camera which will move according to the marker position -->
+    <a-marker-camera type='pattern' url='coyote.patt' >
+        <a-entity scale="1 1 1" >
+          <!--Download GLTF files from google poly-->
+            <a-entity gltf-model="bird/CactusWren.gltf"  position="0 0 0" rotation="0 0 0" >
+            </a-entity>
+        </a-entity>
+    </a-marker-camera>
+  </a-scene>
+</body>
+</html>
+

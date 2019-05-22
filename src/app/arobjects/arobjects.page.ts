@@ -20,39 +20,15 @@ export class ArobjectsPage implements OnInit {
   close() {
      this.navCtrl.back();
   }
-   renderComputer() {
-    this.router.navigate(['computer']);
+   renderBird() {
+     this.router.navigate(['birds']);
   }
-  renderMachine() {
-    this.router.navigate(['machine']);
-  }
-
-  renderCoyote() {
-    this.router.navigate(['coyote']);   // this is coyote referring to bridge
-  }
-  renderEarth() {
-    this.router.navigate(['earth']);
-  }
-  renderForest() {
-     this.router.navigate(['forest']);
-  }
-  renderForest3d() {
-     this.router.navigate(['forest3d']);
-  }
-  renderSatellite() {
-     this.router.navigate(['satellite']);
-  }
-  renderHouse() {
-     this.router.navigate(['house']);
-  }
-  renderKangaroo() {
-     this.router.navigate(['kangaroo']);
+   renderDino() {
+     this.router.navigate(['dino']);
   }
    renderHuman() {
      this.router.navigate(['human']);
   }
-
-
 
   navigateToUnits() {
      this.router.navigate(['units']);
