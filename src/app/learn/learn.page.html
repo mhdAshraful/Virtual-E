@@ -27,36 +27,47 @@
 
 
   <ion-list-header> <h2> Weekly Tasks </h2>  </ion-list-header>
-  <ion-list>
-    <ion-item> <h2>Week 1</h2>
-      <ion-button slot="end" tappable (click)="collapsWeek1 = !collapsWeek1" color="dark" >
-        <ion-icon slot="icon-only" name="arrow-dropdown" ></ion-icon>
-      </ion-button>
-    </ion-item>
-      <ion-text *ngIf="collapsWeek1">
-        <h3> Heading:  </h3>
-        <p> Short Paragraph will be shown here </p>
-      </ion-text>
+
+
+      <!--for week one srart-->
+      <ion-item>
+        <h2>Week 1</h2>
+        <ion-button slot="end" tappable (click)="collapsWeek1 = !collapsWeek1" color="dark" >
+          <ion-icon slot="icon-only" name="arrow-dropdown" ></ion-icon>
+        </ion-button>
+      </ion-item>
+
+          <ion-text *ngIf="collapsWeek1" >
+
+                <h3> Heading:  </h3>
+                <p> Short Paragraph will be shown here </p>
+
+            </ion-text>
+  <!--week one end-->
+
+
+  <!--for week two start-->
+      <ion-item>
+          <h2>Week 2</h2>
+
+          <ion-button slot="end" tappable (click)="collapsWeek2 = !collapsWeek2" color="dark" >
+           <ion-icon  slot="icon-only" name="arrow-dropdown" ></ion-icon>
+          </ion-button>
+
+      </ion-item>
+
+          <ion-text *ngIf="collapsWeek2" >
+
+              <h3> Heading: First Paragraph  </h3>
+              <p> Short Paragraph will be shown here </p>
+                <br>
+              <h3> Heading: Even Multiple Paragraph </h3>
+              <p> Short Paragraph will be shown here </p>
+
+            </ion-text>
+  <!--week two end-->
 
 
 
-    <ion-item> <h2>Week 2</h2>
-
-      <ion-button slot="end" tappable (click)="collapsWeek2 = !collapsWeek2" color="dark" >
-       <ion-icon  slot="icon-only" name="arrow-dropdown" ></ion-icon>
-      </ion-button>
-
-    </ion-item>
-    <ion-text *ngIf="collapsWeek2">
-
-      <h3> Heading: First Paragraph  </h3>
-      <p> Short Paragraph will be shown here </p>
-        <br>
-      <h3> Heading: Even Multiple Paragraph </h3>
-      <p> Short Paragraph will be shown here </p>
-
-    </ion-text>
-
-  </ion-list>
 
 </ion-content>

@@ -5,7 +5,7 @@ import { NgCalendarModule  } from 'ionic2-calendar';
 import {Observable} from 'rxjs';
 import {formatDate} from '@angular/common';
 import {CalendarComponent} from 'ionic2-calendar/calendar';
-import {AlertController} from '@ionic/angular';
+import {AlertController, ToastController} from '@ionic/angular';
 import {Router} from '@angular/router';
 
 
@@ -35,6 +35,7 @@ export class TimePage implements OnInit {
   constructor( private scheduleService: ScheduleService,
                private alertCtrl: AlertController,
                private router: Router,
+               public toastController: ToastController,
                @Inject(LOCALE_ID) private locale: string) {}
 
 
@@ -59,6 +60,7 @@ export class TimePage implements OnInit {
             eventCopy.endTime = new Date(Date.UTC(end.getFullYear(), end.getUTCMonth(), end.getUTCDate() +1 ));
       }
       this.eventSource.push(eventCopy);
+      this.presentSuccess();
       this.myCal.loadEvents();
       this.resetEvent();
   }
@@ -131,7 +133,13 @@ navigateToUnits() {
      this.router.navigate(['units']);
 }
 
-
+async presentSuccess() {
+     const toast = await this.toastController.create({
+      message: 'New event added',
+      duration: 2000
+    });
+     toast.present();
+}
 
 
 

@@ -14,12 +14,12 @@
 </ion-header>
 
 
-<ion-content>
+<ion-content padding>
     <ion-card color="dark">
         <ion-card-content>
            <ion-card-title>Live Virtual Class  </ion-card-title>
             <ion-card-subtitle> Live Class is only available during Regular class times. Please refer to class Schedules.  To see class schedules: <ion-button (click)="gotoTimePage()" fill="clear"> Click Here </ion-button>   </ion-card-subtitle>
-            <ion-button color="success" (click)="navigateToVrView()">join Virtual Class</ion-button>
+            <ion-button color="success" (click)="navigateToVrView()">Join Virtual Class</ion-button>
         </ion-card-content>
     </ion-card>
     <ion-card color="dark">
@@ -33,7 +33,8 @@
         <ion-card-content>
            <ion-card-title>Join Session  </ion-card-title>
             <ion-card-subtitle> Join online session. Supports Most Browser.</ion-card-subtitle>
-                <ion-button color="medium"> Join Session</ion-button>
+            <p> This button is currently disabled </p>
+                <ion-button color="medium" disabled> Join Session</ion-button>
         </ion-card-content>
     </ion-card>
 

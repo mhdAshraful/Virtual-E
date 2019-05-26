@@ -19,9 +19,6 @@ export class UnitsPage implements OnInit {
   ngOnInit() {
     this.enrolledUnits = this.enrolledunitsservice.getItems();
   }
-  navigateToSettings() {
-    this.router.navigate(['settings']);
-  }
   navigateToTabs() {
     this.router.navigate(['/tabs']);
   }

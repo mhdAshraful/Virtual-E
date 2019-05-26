@@ -9,6 +9,8 @@ import {Router} from '@angular/router';
 })
 export class DiscussPage implements OnInit {
 
+    loaded: any;
+
   constructor(private router: Router) { }
 
   ngOnInit() {
@@ -17,5 +19,13 @@ export class DiscussPage implements OnInit {
      this.router.navigate(['units']);
     }
 
+    ionViewWillEnter() {
+    setTimeout(() => {
+      this.loaded = {
+        'sender': 'Team Coyote',
+        'message': 'We are a team of 4. Ashraful, Hossain, Prajwal and Praksh. ',
+      };
+    }, 5000);
+  }
 
 }

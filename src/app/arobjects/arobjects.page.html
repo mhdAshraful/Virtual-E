@@ -11,39 +11,54 @@
 </ion-header>
 
 <ion-content padding>
-    <ion-card class="cardcontainer">
-       <ion-img src="../../assets/marker1.png" ></ion-img>
-      <ion-card-title padding> Point you camera to the logo</ion-card-title>
-      <ion-card-content>
-        <ion-text>
-          Please Download this marker image and print a copy. Later point you camera (while using Android Phone) to the marker to see 3D models in Augmented Reality View
-        </ion-text>
-      </ion-card-content>
-      <ion-button slot="end" fill="clear"> <a href="./../assets/marker1.png" target="_blank"> Download Logo</a> </ion-button>
-    </ion-card>
+
          <p>Click here to change between device functions of Android and iOS</p>
     <ion-segment tappable (click)="alive = !alive">
         <ion-segment-button> Change Device Type </ion-segment-button>
     </ion-segment>
-      <ion-list *ngIf="alive">
-        <ion-list-header class="android"> I'm On Android Phone </ion-list-header>
+
+    <div *ngIf="alive">
+             <ion-list-header class="android"> I'm On Android Phone </ion-list-header>
+           <ion-card class="cardcontainer">
+               <ion-img src="../../assets/marker1.png" ></ion-img>
+              <ion-card-title padding> Point you camera to the logo</ion-card-title>
+              <ion-card-content>
+                <ion-text>
+                  Please Download this marker image and print a copy. Later point you camera (while using Android Phone) to the marker to see 3D models in Augmented Reality View
+                </ion-text>
+              </ion-card-content>
+              <ion-button slot="end" fill="clear"> <a href="./../assets/marker1.png" target="_blank"> Download Logo</a> </ion-button>
+            </ion-card>
+
           <p> Click the images below </p>
-                <ion-button (click)="renderBird()" class="buttonimage" expand="clear"> <ion-img src="../../../assets/bird.png"   ></ion-img> </ion-button>
-                <ion-button (click)="renderDino()" class="buttonimage" expand="clear"> <ion-img src="../../../assets/dino.png"   ></ion-img> </ion-button>
-                <ion-button (click)="renderHuman()" class="buttonimage" expand="clear"> <ion-img src="../../../assets/skeleton.png"  ></ion-img> </ion-button>
 
-      </ion-list>
+            <ion-label>
+                    <ion-img src="../../../assets/bird.png" padding (click)="renderBird()"  class="buttonimage" ></ion-img>
+            </ion-label>
+            <ion-label>
+                    <ion-img src="../../../assets/dino.png" padding (click)="renderDino()"  class="buttonimage" ></ion-img>
+            </ion-label>
+            <ion-label>
+                    <ion-img src="../../../assets/skeleton.png" padding (click)="renderHuman()" class="buttonimage" ></ion-img>
+            </ion-label>
 
-    <ion-list *ngIf="!alive">
+    </div>
+
+    <div *ngIf="!alive">
         <ion-list-header class="iphone" color="primary"> I'm On iPhone</ion-list-header>
+        <p> Click the images below </p>
 
+        <ion-label>
             <a rel="ar" href="../../assets/ARcontents/bird/CactusWren.usdz" padding><img src="../../assets/bird.png" class="buttonimage" padding></a>
-
+        </ion-label>
+        <ion-label>
             <a rel="ar" href="../../assets/ARcontents/dinosor/Megapnosaurus.usdz" padding><img src="../../assets/dino.png" class="buttonimage" padding></a>
-
+        </ion-label>
+        <ion-label>
             <a rel="ar" href="../../assets/ARcontents/skeleton/skeleton.usdz" padding><img src="../../assets/skeleton.png" class="buttonimage" padding></a>
+        </ion-label>
 
-    </ion-list>
+    </div>
 
 
 </ion-content>

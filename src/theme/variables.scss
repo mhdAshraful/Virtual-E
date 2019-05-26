@@ -3,6 +3,13 @@
 
 /** Ionic CSS Variables **/
 :root {
+  // custom color
+  --ion-toolbar-background: var( --greenis );
+
+ --greenis:#F4F3D8;
+ //--greenis: background linear-gradient(to right, #99f2c8 30%, #6DD5FA 40%, #3880ff 30%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;

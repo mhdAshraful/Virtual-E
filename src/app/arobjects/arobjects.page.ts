@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {NavController} from '@ionic/angular';
-import {Router} from '@angular/router';
+import { Platform, NavController} from '@ionic/angular';
+import { Router} from '@angular/router';
+
+
 
 @Component({
   selector: 'app-arobjects',
@@ -10,7 +12,23 @@ import {Router} from '@angular/router';
 export class ArobjectsPage implements OnInit {
 
   constructor(private navCtrl: NavController,
-              private router: Router) {
+              private router: Router,
+              public plt: Platform) {
+
+
+      plt.ready().then(() => {
+
+          if (this.plt.is('android')) {
+              console.log('running on Android device!');
+          }
+          if (this.plt.is('ios')) {
+              console.log('running on iOS device!');
+          }
+          if (this.plt.is('mobileweb')) {
+              console.log('running in a browser on mobile!');
+          }
+
+      });
 
   }
 

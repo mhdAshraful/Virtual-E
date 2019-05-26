@@ -1,5 +1,9 @@
 ion-content{
-   --ion-background-color: #ecf0f1;
+   --background: #00C9FF;  /* fallback for old browsers */
+  --background: -webkit-linear-gradient(to bottom, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
+  --background: linear-gradient(to bottom, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 }
 .input-wrap {
     padding: 5px;
@@ -23,12 +27,16 @@ ion-footer {
     white-space: pre-line;
 }
 .container {
+   ion-label{
+     color:   #EB6525;
+     font-weight: bold;
+   }
   .message {
+    color: #11998e;
     position: relative;
     padding: 7px 0;
     .msg-content {
-        color: #343434;
-        background-color: #ddd;
+        color: #11998e;
         float: left;
     }
     .user-img {

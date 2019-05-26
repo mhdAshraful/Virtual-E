@@ -1,6 +1,7 @@
 @media only screen and (min-width:360px) {
   ion-card{
-  max-width: 344px;
+    background: #D6FA8C;
+    max-width: 344px;
   }
   .cardcontainer {
     margin-left: 8px;
@@ -9,6 +10,7 @@
 }
 @media only screen and (min-width:390px) {
   ion-card{
+    background: #D6FA8C;
   max-width: 344px;
   }
   .cardcontainer {
@@ -18,6 +20,7 @@
 }
 @media only screen and (min-width:420px) {
   ion-card{
+    background: #D6FA8C;
   max-width: 344px;
   }
   .cardcontainer {
@@ -27,6 +30,7 @@
 }
 @media only screen and (min-width:540px) {
   ion-card{
+    background: #D6FA8C;
   max-width: 344px;
   }
   .cardcontainer {
@@ -36,6 +40,7 @@
 }
 @media only screen and (min-width:600px) {
   ion-card{
+    background: #D6FA8C;
   max-width: 344px;
   }
   .cardcontainer {
@@ -45,6 +50,7 @@
 }
 @media only screen and (min-width:800px) {
   ion-card{
+    background: #22E4AC;
   max-width: 344px;
   }
   .cardcontainer {
@@ -54,5 +60,11 @@
 
 }
 
+.pageBody {
+  --background: #00C9FF;  /* fallback for old browsers */
+  --background: -webkit-linear-gradient(to bottom, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
+  --background: linear-gradient(to bottom, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+
+}
 

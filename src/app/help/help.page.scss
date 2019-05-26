@@ -1,9 +1,17 @@
 ion-content{
-   --ion-background-color: #ecf0f1;
+  --background: #00C9FF;  /* fallback for old browsers */
+  --background: -webkit-linear-gradient(to bottom, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
+  --background: linear-gradient(to bottom, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+ion-card{
+   background-color: #f4f5f8;
 }
 
 @media only screen and (min-width:360px) {
   ion-card{
+
   max-width: 344px;
   }
   .cardcontainer {
@@ -13,6 +21,7 @@ ion-content{
 }
 @media only screen and (min-width:390px) {
   ion-card{
+
   max-width: 344px;
   }
   .cardcontainer {
@@ -22,6 +31,7 @@ ion-content{
 }
 @media only screen and (min-width:420px) {
   ion-card{
+
   max-width: 344px;
   }
   .cardcontainer {
@@ -31,6 +41,7 @@ ion-content{
 }
 @media only screen and (min-width:540px) {
   ion-card{
+
   max-width: 344px;
   }
   .cardcontainer {
@@ -40,6 +51,7 @@ ion-content{
 }
 @media only screen and (min-width:600px) {
   ion-card{
+
   max-width: 344px;
   }
   .cardcontainer {
@@ -49,6 +61,7 @@ ion-content{
 }
 @media only screen and (min-width:800px) {
   ion-card{
+
   max-width: 344px;
   }
   .cardcontainer {
